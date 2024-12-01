@@ -29,6 +29,10 @@ body {
     font-size: 24px;
 }
 
+.brand:hover {
+    color: plum
+}
+
 .fa-bars {
     cursor: pointer;
 }
@@ -115,10 +119,19 @@ main {
     margin-bottom: 1rem;
 }
 
+.contact-mssg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-links:hover > a {
@@ -274,4 +287,12 @@ hr {
         padding-right: 2rem;
         margin-top: 0.5;
     }
+}
+
+.pdf-container {
+    width: 100%;
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
