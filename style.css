@@ -149,6 +149,15 @@ main {
     font-size: 30px;
 }
 
+.personal-info h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 28px;
+    color:purple;
+}
+
 @media (min-width: 768px) {
     .profile img {
         max-width: 300px;
@@ -179,7 +188,6 @@ main {
         margin-top: 0;
         
     }
-    
 }
 
 hr {
