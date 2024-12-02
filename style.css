@@ -29,7 +29,7 @@ body {
     font-size: 24px;
 }
 
-.brand:hover {
+.brand a:hover {
     color: plum
 }
 
@@ -192,6 +192,8 @@ main {
 
 hr {
     margin: .5rem 0;
+    width: 100%;
+    border-color: #af7aff;
 }
 
 .project {
@@ -299,8 +301,44 @@ hr {
 
 .pdf-container {
     width: 100%;
-    max-width: auto;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.pdf-container embed {
+    height: auto;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #c5afe5;
+}
+
+#back-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+footer {
+    margin-top: 2.5rem;
+    padding: 20px;
+    background-color: #c5afe5;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+footer .contact-links {
+    margin: 0;
 }
