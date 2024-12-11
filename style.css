@@ -106,7 +106,7 @@ main {
 #about h1 {
     text-align: center;
     margin: 1rem 0;
-    font-size: 28px;
+    font-size: 30px;
     color:purple;
 }
 
@@ -118,6 +118,15 @@ main {
 .info p {
     margin-bottom: 1rem;
     font-size: 18px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #af7aff;
+}
+
+.info a:hover {
+    color: purple;
 }
 
 .contact-mssg {
@@ -155,8 +164,37 @@ main {
     justify-content: center;
     text-align: center;
     margin: 1.5rem 0;
-    font-size: 28px;
+    font-size: 30px;
     color:purple;
+}
+
+#personal_interests {
+    padding: 0 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.personal_i {
+    font-size: 28px;
+    color: purple;
+    letter-spacing: 3px;
+}
+
+.interests {
+    padding-left: 2.5rem;
+    font-size: 18px;
+}
+
+.interests p {
+    margin-top: 1.5rem;
+}
+
+.interests a {
+    text-decoration: none;
+    color: purple;
+}
+
+.interests a:hover {
+    color: #af7aff;
 }
 
 @media (min-width: 768px) {
@@ -192,7 +230,7 @@ main {
 }
 
 .introduction {
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,7 +260,7 @@ main {
 
 .introduction h2 {
     font-size: 30px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: purple;
     text-align: center;
 }
@@ -242,14 +280,18 @@ main {
 }
 
 .info p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
-.info a {
-    text-decoration: none;
-    color: #af7aff;
+.featured_project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    color: #c5afe5;
+    font-size: 15px;
 }
-
 .cta {
     border: 1px solid plum;
     display: block;
@@ -262,8 +304,8 @@ main {
     text-decoration: none;
     font-size: 25px;
     color: #c5afe5;
-    margin-top: 5rem;
     transition: all 1s ease;
+    margin-top: 0.5rem;
 }
 
 .cta:hover {
@@ -429,6 +471,10 @@ footer {
     background-color: #c5afe5;
     border-radius: 5px;
     box-shadow: 10px 10px 10px gray;
+}
+
+footer .contact-mssg {
+    margin-bottom: 0.5rem;
 }
 
 footer .contact-links {

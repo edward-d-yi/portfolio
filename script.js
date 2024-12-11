@@ -6,7 +6,7 @@ document.querySelector('.fa-bars').addEventListener('click', () => {
 const backToTop = document.getElementById('back-to-top')
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 1500) {
+    if(window.scrollY > 1400) {
         backToTop.classList.remove('hidden')
     } else {
         backToTop.classList.add('hidden')
