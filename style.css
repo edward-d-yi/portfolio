@@ -83,13 +83,11 @@ main {
 }
 
 #about {
-    background-color: #c5afe5;
     padding: 1rem;
     border-radius: 5px;
     margin-top: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    box-shadow: 10px 10px 10px grey;
 }
 
 .profile {
@@ -120,6 +118,10 @@ main {
     font-size: 18px;
 }
 
+.info .school {
+    color: #52adc8;
+}
+
 .info a {
     text-decoration: none;
     color: #af7aff;
@@ -127,6 +129,10 @@ main {
 
 .info a:hover {
     color: purple;
+}
+
+.info .school:hover {
+    color: blue
 }
 
 .contact-mssg {
@@ -255,7 +261,7 @@ main {
 
 .introduction h1 {
     margin-bottom: 0.5rem;
-    color: #c5afe5;
+    color: #af7aff;
 }
 
 .introduction h2 {
@@ -336,8 +342,10 @@ hr {
 }
 
 .project_header {
-    background-color: #c5afe5;
     padding: 1rem;
+    margin: 1rem;
+    border-top: 1px solid purple;
+    border-bottom: 1px solid purple;
 }
 
 .project_header h1 {
@@ -345,6 +353,12 @@ hr {
     font-size: 25px;
     margin-bottom: 1rem;
     color: purple;
+}
+
+.project_header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .description {
@@ -362,7 +376,7 @@ hr {
 
 .description p b {
     display: inline-block;
-    width: 135px;
+    /* width: 135px; */
 }
 
 .process {
@@ -393,6 +407,7 @@ hr {
 
 .image img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .content {
@@ -409,7 +424,20 @@ hr {
     box-shadow: 5px 5px 5px goldenrod;
 }
 
+.final .purpose {
+    background-color: white;
+    box-shadow: none;
+}
+
 @media (min-width: 768px) {
+    .project_header img {
+        max-width: 700px;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+
     .process-item {
         flex-direction: row;
         flex-wrap: wrap;
@@ -417,10 +445,16 @@ hr {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .process-item.final {
+        justify-content: center;
+    }
+
     .process-item h3 {
         width: 100%;
         margin-bottom: 1.5rem;
     }
+
     .image, .content {
         width: 50%;
     }
@@ -432,7 +466,6 @@ hr {
 
     .image img{
         max-width: 500px;
-
     }
 
     .content {
@@ -472,14 +505,52 @@ hr {
     pointer-events: none;
 }
 
+.purpose.final {
 
+}
+
+.purpose p {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.slogan {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #af7aff;
+    margin-bottom: 0.5rem;
+    font-size: 22px;
+}
+
+.purpose a {
+    text-decoration: none;
+    color: #af7aff;
+    display: contents;
+}
+
+.purpose a:hover {
+    color: purple;
+}
+
+.video {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.video video {
+    width: 100%;
+}
 
 footer {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     padding: 20px;
     background-color: #c5afe5;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px gray;
 }
 
 footer .contact-mssg {
