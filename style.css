@@ -417,6 +417,15 @@ hr {
     margin-top: 1rem;
 }
 
+.content a {
+    text-decoration: none;
+    color: #af7aff;
+}
+
+.content a:hover {
+    color: purple;
+}
+
 .purpose {
     background-color: yellow;
     padding: 1rem;
