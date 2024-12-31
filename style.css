@@ -442,8 +442,9 @@ hr {
 .content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .content a {
@@ -453,6 +454,18 @@ hr {
 
 .content a:hover {
     color: purple;
+}
+
+.yellow {
+    color: #FFFF99;
+}
+
+.blue {
+    color: #4e7ec1;
+}
+
+.red {
+    color: #fca6a1;
 }
 
 .purpose {
