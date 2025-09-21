@@ -2,6 +2,8 @@ window.onload = () => {
     const today = new Date()
     const year = today.getFullYear()
     document.querySelector('#year').innerHTML = year
+
+    toggleProjects();
 }
 
 document.querySelector('.fa-bars').addEventListener('click', () => {
@@ -25,5 +27,14 @@ if (location.href.includes('index')) {
             top: 0,
             behavior: 'smooth'
         })
+    })
+}
+
+function toggleProjects() {
+    const dropDownBtn = document.querySelector('.dropdown-btn');
+    const projectsContent = document.querySelector('.dropdown-content');
+
+    dropDownBtn.addEventListener('click', function(){
+        projectsContent.classList.toggle('active')
     })
 }
