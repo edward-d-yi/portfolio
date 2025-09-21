@@ -393,6 +393,24 @@ hr {
     margin-bottom: 1rem;
 }
 
+.project_header_hci {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.project_header_hci h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1rem;
+    color: purple;
+}
+
+.project_header_hci img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 .description {
     max-width: 700px;
     margin: auto;
@@ -426,6 +444,7 @@ hr {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    margin-top: 1.5rem;
 }
 
 .process-item h3 {
@@ -507,7 +526,12 @@ hr {
     box-shadow: 5px 5px 5px goldenrod;
 }
 
-.final .purpose {
+.final .purpose{
+    background-color: white;
+    box-shadow: none;
+}
+
+.hci .purpose {
     background-color: white;
     box-shadow: none;
 }
@@ -520,6 +544,12 @@ hr {
         margin-bottom: 1rem;
     }
 
+    .project_header_hci img {
+        max-width: 700px;
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
 
     .process-item {
         flex-direction: row;
@@ -530,6 +560,10 @@ hr {
     }
 
     .process-item.final {
+        justify-content: center;
+    }
+
+    .process-item.hci {
         justify-content: center;
     }
 
