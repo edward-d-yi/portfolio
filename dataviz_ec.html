@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h2 class="brand">
+            <a href="index.html">Edward Yi</a>
+        </h2>
+        <i class="fa-solid fa-bars"></i>
+        <nav class="nav_links hide">
+            <ul>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-btn">Projects <i class="fa-solid fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="index.html#project">CU Eats</a>
+                        <a href="dataviz.html">DataViz</a>
+                        <a href="dataviz_ec.html">DataViz EC</a>
+                        <a href="determinants.html">Determinants</a>
+                        <a href="hci.html">Michitop (HCI)</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project" id="project">
+        <div class="project_header_hci">
+            <h1>Rocky Morphology</h1>
+            <img src="/images/rocky_morphology.png" alt="Rocky Morphology">
+            <div class="description">
+                <iframe width="100%" height="1013.015625" frameborder="0"
+                    src="https://observablehq.com/embed/9abff9114430cee9?cells=chart"></iframe>
+                <h4>Spring 2025 Data Visualization EC Project</h4>
+                <div class="process-item hci">
+                    <h3>Redesign Process</h3>
+                    <div class="purpose">
+                        <p>
+                            Please feel free to view the milestones of this redesigned interative data visualization
+                            <a href="https://observablehq.com/d/9abff9114430cee9" target="_blank"
+                                rel="noopener noreferrer">here</a>.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    <b>Redesign Methodology</b>
+                </p>
+                <p>
+                    My approach to redesigning this visualization focused on making the information more easily
+                    digestible, enhancing the communication of the narrative elements in these films in a way that is
+                    more visually intuitive for viewers and users, while ensuring it remained feasible within the scope
+                    of my current skills and the time available.
+                </p>
+                <p>
+                    <b>Writeup / Critique</b>
+                </p>
+                <p>
+                    I noticed that the original visualization lacked source material for the data, which I had to
+                    compile manually using a text file and then appropriately convert for use in the redesign. What
+                    stood out to me most during this process, particularly while breaking down the narrative segments
+                    (dialogue, training, montages, pre-fight, fight, and credits), was how misleading the information
+                    could be when users interact with the visual. For example, certain segments differentiated by color
+                    often overlapped with others they were meant to distinguish from, leading to potential confusion.
+                </p>
+                <p>
+                    Drawing on Donald Norman's guidance on the representation of numbers, I also felt that using Arabic
+                    numerals instead of Roman numerals to identify the films would make the visualization more
+                    immediately understandable to users. If I had more time, I would incorporate additional interactive
+                    features tailored to the data in order to further enhance user experience and comprehension of the
+                    visual.
+                </p>
+                <p>
+                    From the redesigned visualization, it's immediately clear that the 'Dialogue' segment consistently
+                    dominates the narrative structure and comprises the majority of the runtime across all the films.
+                    Another compelling insight revealed through the redesign is the gradual decline in ratings for the
+                    sequels over time, except for the final film, Rocky VI, which was surprisingly rated nearly as high
+                    as the second installment.
+                </p>
+                <p>
+                    While the redesign is less complex than the original, I believe it is more visually accessible,
+                    avoids overwhelming the viewer, and effectively communicates the core information that users are
+                    likely seeking. The addition of tooltip-based interactivity allows users to explore further details
+                    at their discretion. This revised data visualization aims to present the narrative elements of each
+                    Rocky movie in a way that is clear, accessible, and relevant, making it easier for viewers to engage
+                    with and interpret the data without unnecessary effort.
+                </p>
+                <p>
+                    <b>Redesign Guidelines:</b>
+                </p>
+                <p>
+                    Choose a published visualization (general media or academic) and redesign it to improve the
+                    communication. Include a writeup with your critique of the original and the rationale behind your
+                    modifications. Your redesign should be structurally significant, and not merely adding a few labels
+                    or touch-ups. Consider: how might you redesign for a different audience? with a more thorough or
+                    more descriptive dataset? to prioritize a different message? to change the narrative structure? Make
+                    sure you read <a href="https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9#.mha4ohu1t"
+                    target="_blank" rel="noopener noreferrer">Design and Redesign in Data Visualization</a> by Viegas & Wattenberg, 2015 before you
+                    start. You're welcome to use any software tool you like.
+                </p>
+                <p>
+                    <b>References:</b>
+                </p>
+                <p>
+                    <a href="https://www.imdb.com/list/ls539962985/" target="_blank" rel="noopener noreferrer">Rocky
+                        Movies Chronology (IMDb)</a>
+                </p>
+                <p>
+                    <a href="https://d3-graph-gallery.com/circularpacking.html" target="_blank"
+                        rel="noopener noreferrer">Circular Packing (D3)</a>
+                </p>
+                <p>
+                    <a href="https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9#.mha4ohu1t" target="_blank"
+                        rel="noopener noreferrer">Design and Redesign article</a>
+                </p>
+                <p>
+                    <a href="https://www.fathom.info/rocky/" target="_blank" rel="noopener noreferrer">Rocky Morphology
+                        (original visualization)</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="contact-mssg">
+            <p>Please feel free to connect with me:</p>
+        </div>
+        <div class="contact-links">
+
+            <a href="https://www.linkedin.com/in/edwardyi/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:edward.dt.yi@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://github.com/edward-d-yi" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>&copy; <span id="year"></span> Edward Yi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
